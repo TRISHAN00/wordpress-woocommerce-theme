@@ -6198,11 +6198,6 @@ img {
     padding: 12px;
     font-size: 14px;
   }
-  .widget_shopping_cart_content .woocommerce-mini-cart .mini_cart_item .product-thumbnail,
-  .widget_shopping_cart_content .woocommerce-mini-cart .mini_cart_item > a:first-child {
-    width: 70px;
-    height: 70px;
-  }
   .widget_shopping_cart_content .woocommerce-mini-cart .mini_cart_item .cart-item-details .product-name {
     font-size: 13px;
   }
@@ -10930,6 +10925,14 @@ img {
   min-height: 50px;
   border-radius: 35px;
   font-size: 14px;
+  /* small mobile :320px. */
+}
+@media (max-width: 767px) {
+  .product-card .product-image .product-labels.labels-rounded .product-label {
+    min-width: 20px;
+    min-height: 20px;
+    font-size: 10px;
+  }
 }
 .product-card .product-image img {
   width: 100%;
@@ -11130,6 +11133,12 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* small mobile :320px. */
+}
+@media (max-width: 767px) {
+  .product-card .product-overlay .add-to-cart {
+    padding-top: 130px;
+  }
 }
 .product-card .product-overlay .add-to-cart .variations_form {
   display: flex;
@@ -11160,9 +11169,15 @@ img {
   margin-bottom: 10px;
   padding: 0;
 }
+@media (max-width: 767px) {
+  .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr th.label {
+    margin-bottom: unset;
+  }
+}
 .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr th.label label {
   margin: 0;
   color: #ffffff;
+  font-size: 8px;
 }
 .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr td.value {
   padding: 0;
@@ -11231,17 +11246,17 @@ img {
 }
 .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price .price {
   color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 700;
+  /* small mobile :320px. */
 }
 .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price .price del {
   color: rgba(255, 255, 255, 0.5);
   margin-right: 8px;
-  font-size: 1rem;
+  font-size: 10px;
 }
 .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price .price ins {
   text-decoration: none;
   color: #48bb78;
+  font-size: 10px;
 }
 .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .woocommerce-variation.single_variation .woocommerce-variation-price .price .screen-reader-text {
   display: none;
@@ -11378,7 +11393,7 @@ img {
   }
   .product-card .product-content .select-options-btn {
     padding: 10px;
-    font-size: 0.9375rem;
+    font-size: 12px;
   }
   .product-card .product-overlay {
     padding: 0px;
@@ -11400,16 +11415,16 @@ img {
     margin-bottom: 0px;
   }
   .product-card .product-image {
-    height: 240px;
+    height: 120px;
   }
   .product-card .product-content {
-    padding: 15px;
+    padding: 5px;
   }
   .product-card .product-content .product-name {
     margin-bottom: 8px;
   }
   .product-card .product-content .product-name a {
-    font-size: 0.9375rem;
+    font-size: 10px;
     -webkit-line-clamp: 2;
   }
   .product-card .product-content .product-category {
@@ -11418,15 +11433,16 @@ img {
     margin-bottom: 12px;
   }
   .product-card .product-content .product-price {
-    font-size: 1rem;
-    margin: 8px 0;
+    font-size: 11px;
+    margin: 5px 0;
   }
   .product-card .product-content .product-price del {
     font-size: 0.875rem;
   }
   .product-card .product-content .select-options-btn {
-    padding: 10px;
-    font-size: 0.875rem;
+    padding: 2px;
+    font-size: 10px;
+    margin-bottom: unset;
   }
   .product-card .product-overlay {
     padding: 0px;
@@ -11448,13 +11464,12 @@ img {
     margin-bottom: 12px;
   }
   .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr th.label {
-    font-size: 0.75rem;
-    margin-bottom: 8px;
+    font-size: 10px;
+    margin-bottom: unset;
   }
   .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr td.value select {
-    padding: 10px 12px;
-    font-size: 0.875rem;
-    padding-right: 35px;
+    padding: 0px 5px;
+    font-size: 8px;
   }
   .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap {
     gap: 12px;
@@ -11476,53 +11491,13 @@ img {
   .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .variations_button .quantity input[type=number] {
     padding: 10px 8px;
     font-size: 0.875rem;
-    height: 44px;
+    height: 28px;
   }
   .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .variations_button .single_add_to_cart_button {
     width: 100%;
-    padding: 5px;
-    font-size: 0.875rem;
+    padding: 0px;
+    font-size: 9px;
     height: 44px;
-  }
-}
-@media (max-width: 374px) {
-  .product-card .product-image {
-    height: 200px;
-  }
-  .product-card .product-content {
-    padding: 12px;
-  }
-  .product-card .product-content .product-name a {
-    font-size: 0.875rem;
-  }
-  .product-card .product-content .product-price {
-    font-size: 0.9375rem;
-  }
-  .product-card .product-content .select-options-btn {
-    padding: 8px;
-    font-size: 0.8125rem;
-  }
-  .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr th.label {
-    font-size: 0.6875rem;
-  }
-  .product-card .product-overlay .add-to-cart .variations_form table.variations tbody tr td.value select {
-    font-size: 12px;
-    padding: 0px 8px;
-  }
-  .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .woocommerce-variation.single_variation {
-    padding: 8px 10px;
-    font-size: 0.9375rem;
-  }
-  .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .woocommerce-variation.single_variation .price {
-    font-size: 0.9375rem;
-  }
-  .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .variations_button .quantity input[type=number] {
-    font-size: 0.8125rem;
-    height: 40px;
-  }
-  .product-card .product-overlay .add-to-cart .variations_form .single_variation_wrap .variations_button .single_add_to_cart_button {
-    font-size: 12px;
-    padding: 5px;
   }
 }
 

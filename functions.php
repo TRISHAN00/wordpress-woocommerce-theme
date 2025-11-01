@@ -891,7 +891,8 @@ function ajax_load_products()
                         </div>
 
                         <?php if ($product->is_type('variable')) : ?>
-                            <button class="select-options-btn">Select Options</button>
+                            <button class="select-options-btn"><i class="fas fa-shopping-cart"></i></button>
+                            
                             <div class="product-overlay">
                                 <div class="close-overlay"></div>
                                 <div class="add-to-cart">

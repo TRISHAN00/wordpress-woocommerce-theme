@@ -508,9 +508,9 @@ button.single_add_to_cart_button.button.alt {
   border-radius: 5px;
   transition: background 0.3s ease;
 
-  @media (max-width: 768px) {
-    font-size: 12px;
-    padding: 8px 10px;
+  @media (max-width: 767px) {
+    font-size: 10px;
+    padding: 5px 10px;
   }
 }
 
