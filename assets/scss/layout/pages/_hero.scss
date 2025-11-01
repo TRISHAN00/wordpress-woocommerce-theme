@@ -1,0 +1,64 @@
+@use "../../utils" as *;
+
+/*----------------------------------------*/
+/*  6.8 Hero / Banner Area
+/*----------------------------------------*/
+.banner-area {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  aspect-ratio: 15 / 7;
+  background: #000;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: #fc4d0e;
+  }
+
+  &-slide-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; // ensure images never bleed out
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: inherit; // ✅ show full image without cropping
+      object-position: center;
+      display: block;
+    }
+
+    /* For mobile */
+    @media (max-width: 767px) {
+      aspect-ratio: 1 / 1; // ✅ square ratio for phones
+    }
+
+    /* Desktop / tablet */
+    @media (min-width: 768px) {
+      aspect-ratio: 16 / 9;
+
+      img.desktop-img {
+        display: block;
+      }
+
+      img.mobile-img {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+sass --watch "D:\server\htdocs\vapedreamhub\wp-content\themes\razu-theme\assets\scss\main.scss:D:\server\htdocs\vapedreamhub\wp-content\themes\razu-theme\assets\css\style.css"

@@ -1,0 +1,118 @@
+@use "../../utils" as *;
+/* === WooCommerce Login Page Custom Styling === */
+.woocommerce-Button.button {
+  background: linear-gradient(135deg, #ff5415, #d43c00) !important;
+  color: #fff;
+}
+
+.show-password-input {
+  background: linear-gradient(135deg, #ff5415, #d43c00) !important;
+  color: #fff;
+}
+
+.woocommerce form.login {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px 35px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.woocommerce form.login:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.woocommerce h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* Input Fields */
+.woocommerce form .input-text {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #f9f9f9;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.woocommerce form .input-text:focus {
+  border-color: #ff5415;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 84, 21, 0.2);
+}
+
+/* Labels */
+.woocommerce form label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Remember Me + Password Link */
+.woocommerce-form-login__rememberme {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.woocommerce-LostPassword {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.woocommerce-LostPassword a {
+  color: #ff5415;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.woocommerce-LostPassword a:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.woocommerce-form-login__submit.button {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ff5415, #d43c00);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.woocommerce-form-login__submit.button:hover {
+  background: linear-gradient(135deg, #d43c00, #a62e00);
+}
+
+/* Checkbox */
+.woocommerce-form__input-checkbox {
+  accent-color: #ff5415;
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .woocommerce form.login {
+    margin: 40px 15px;
+    padding: 30px 20px;
+  }
+  .woocommerce h2 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,277 @@
+@use "../../utils" as *;
+
+/* ========================================
+   BLOG PAGE STYLES
+======================================== */
+/* ===== Blog Section ===== */
+.custom-blog-section {
+  background: #f9fafb;
+}
+
+.page-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+/* ===== Blog Card ===== */
+.blog-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Image ===== */
+.blog-thumb img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-thumb img {
+  transform: scale(1.05);
+}
+
+/* ===== Body ===== */
+.blog-body {
+  padding: 22px 24px;
+  flex-grow: 1;
+}
+
+.blog-meta {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.meta-sep {
+  margin: 0 6px;
+}
+
+/* ===== Title ===== */
+.blog-title {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.blog-title a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.blog-title a:hover {
+  color: #d32f2f;
+}
+
+/* ===== Excerpt ===== */
+.blog-excerpt {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* ===== Read More Button ===== */
+.read-more-btn {
+  color: #d32f2f;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.read-more-btn span {
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover span {
+  transform: translateX(4px);
+}
+
+.read-more-btn:hover {
+  color: #000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 30px;
+  }
+
+  .blog-thumb img {
+    height: 200px;
+  }
+
+  .blog-card {
+    border-radius: 10px;
+  }
+
+  .blog-body {
+    padding: 18px;
+  }
+}
+
+/* ===== Single Post Section ===== */
+.custom-single-post {
+  background: #f9fafb;
+}
+
+.single-post-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  padding-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.single-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.single-post-thumb img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.single-post-body {
+  padding: 30px 25px;
+}
+
+.single-post-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.single-post-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.single-post-meta .meta-sep {
+  margin: 0 6px;
+}
+
+.single-post-content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.single-post-content img {
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.single-post-tags {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.single-post-tags a {
+  background: #ff6f3c;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.single-post-tags a:hover {
+  background: #ff4500;
+}
+
+.single-post-share {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.single-post-share a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #ff6f3c;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.single-post-share a:hover {
+  background: #ff4500;
+}
+
+.single-post-navigation {
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+.single-post-navigation a {
+  color: #d32f2f;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.single-post-navigation a:hover {
+  color: #000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+  .single-post-title {
+    font-size: 28px;
+  }
+
+  .single-post-thumb img {
+    height: 300px;
+  }
+
+  .single-post-body {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-post-title {
+    font-size: 24px;
+  }
+
+  .single-post-thumb img {
+    height: 220px;
+  }
+
+  .single-post-body {
+    padding: 20px 15px;
+  }
+
+  .single-post-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

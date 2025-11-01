@@ -1,0 +1,50 @@
+@use '../../utils' as *;
+/* Floating Social Icons Container */
+.floating-socials {
+  position: fixed;
+  bottom: 120px;
+  right: 25px; /* Change to left:25px if you want them on the left */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Individual Icon Buttons */
+.floating-socials .icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.floating-socials .icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand Colors */
+.floating-socials .whatsapp {
+  background-color: #25d366;
+}
+
+.floating-socials .telegram {
+  background-color: #0088cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .floating-socials .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,57 @@
+@use "../utils" as *;
+
+.account-dashboard-area {
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+  }
+
+  .nav-tabs {
+    border: none;
+
+    .nav-link {
+      border: none;
+      text-align: left;
+      padding: 12px 16px;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #555;
+      border-radius: 6px;
+      transition: 0.3s;
+
+      &:hover {
+        background: #f8f8f8;
+        color: #ad242f;
+      }
+
+      &.active {
+        background: #ad242f;
+        color: #fff;
+      }
+    }
+  }
+
+  .tab-content {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+  }
+
+  form {
+    .form-label {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      background: #ad242f;
+      border: none;
+
+      &:hover {
+        background: #8a1c24;
+      }
+    }
+  }
+}
