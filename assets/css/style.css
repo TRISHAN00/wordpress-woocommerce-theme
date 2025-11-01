@@ -10761,9 +10761,10 @@ img {
   .product-sidebar {
     position: static;
     margin-bottom: 30px;
+    padding: 20px;
   }
   .product-sidebar .sidebar-categories .category-list {
-    display: none;
+    display: block;
   }
   .product-sidebar .mobile-category-dropdown {
     display: block;

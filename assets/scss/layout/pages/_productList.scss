@@ -297,9 +297,10 @@
   @media (min-width: 768px) and (max-width: 991px) {
     position: static;
     margin-bottom: 30px;
+    padding: 20px;
 
     .sidebar-categories .category-list {
-      display: none;
+      display: block;
     }
 
     .mobile-category-dropdown {
